@@ -60,7 +60,7 @@ const scrapBSE = async (req, res) => {
         //? using cheerio to load the data
         const $ = load(stock_data)
 
-        fs.writeFileSync(`${path}/BSE_stock_data.html`, pretty($.html()))  //* storing modified html into the .html file
+        // fs.writeFileSync(`${path}/BSE_stock_data.html`, pretty($.html()))  //* storing modified html into the .html file
 
         // console.log(pretty($('table tbody tr').text()))
         // fs.writeFileSync('stock_data_table.txt', pretty($('table tbody tr').text()));

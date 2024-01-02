@@ -59,7 +59,7 @@ const scrapNSE = async (req, res) => {
             $(element).find('td:last-child').remove()
         });
         const new_stock_data =$.html() //* saving the modified html into the variable
-        fs.writeFileSync(`${path}/NSE_stock_data.html`,pretty(new_stock_data))  //* storing modified html into the .html file
+        // fs.writeFileSync(`${path}/NSE_stock_data.html`,pretty(new_stock_data))  //* storing modified html into the .html file
         
         const col_name = {}
         //! Iterating through the 'thead' to extract column names
